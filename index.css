@@ -1,0 +1,297 @@
+*{ 
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Montserrat', serif;
+    background-color: #e5f4ff;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172035;
+    color: white;
+    font-family:'Montserrat', serif;
+}
+
+.logo{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    display: block;
+}
+
+.nav-links li:hover{
+    background-color: gray;
+}
+
+.toggle-b{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-b .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 600px){
+   
+    .toggle-b{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-links li{
+        text-align: center;
+    }
+    .nav-links li a{
+        padding: 0.5rem 1rem;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+}
+
+.home-page{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;  
+}
+
+.title{
+    font-weight:500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    font-weight:500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.titles{
+    height: 250px;
+    width: 45%;
+    margin-top: 70px;
+    margin-right: 70px;
+    padding-top: 50px;
+}
+
+.img{
+   margin-top: 10px; ; 
+   padding-top: 40px;
+   padding-left: 100px;
+}
+
+#img{
+    border-radius: 25px;
+    height: 300px;
+    width: 100%;
+}
+
+.home-page2{
+    padding-top: 50px;
+}
+
+.title-2{
+    font-weight:500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+.subtitle-2{
+    font-weight:500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.titles-2{
+    height: 200px;
+    width: 100%;
+    margin-top: 150px;
+    padding-left: 10px; ;
+}
+
+.titles-2 hr{
+    width: 60%;
+    margin-right: 500px;
+}
+
+.titles-3{
+    height: 600px;
+    width: 100%;
+    margin-bottom: 200px;
+    padding-left: 10px;
+}
+
+.title-3{
+    font-weight:500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+.titles-3 hr{
+    width: 60%;
+    margin-right: 500px;
+}
+
+#skills{
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+    font-weight:500;
+    font-size: 1.5em;
+}
+
+.skills-bar{
+    margin-top: 23px;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+
+#html{
+    width: 65%;
+    background-color: darkorange;
+}
+
+#css{
+    width: 60%;
+    background-color: dodgerblue;
+}
+
+#js{
+    width: 40%;
+    background-color: gold;
+}
+
+#java{
+    width: 50%;
+    background-color: orange;
+}
+
+#c{
+    width: 50%;
+    background-color: #006994;
+}
+
+.pre{
+    float: right;
+}
+
+
+@media(max-width:600px){
+    .home-page{
+        flex-direction: column;
+        align-items: flex-start;  
+    }
+    .img{
+        margin-top: 30px; ; 
+        padding-top: 40px;
+        padding-left: 50px;
+     }
+     
+     #img{
+         border-radius: 25px;
+         height: 300px;
+         width: 100%;
+     }
+     
+    .titles{
+        padding-left: 100px;
+        margin-bottom: 150px;
+    }
+
+    .titles-3{
+        margin-top: 100px;
+    }
+    
+}
+
+.home-page3{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;  
+    margin-bottom: 200px;
+}
+
+.info{
+    
+    width: 100%;
+}
+
+.title-4{
+    font-weight:500;
+    font-size: 3em;
+    margin-bottom: 1rem; 
+}
+
+.subtitles-4{
+    font-weight:500;
+    font-size: 1.5em;
+}
+
+.titles-4{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px; ;
+}
+
+.titles-4 hr{
+    width: 100%;
+    margin-right: 500px;
+}
+
+.infoo{
+    font-weight:500;
+    font-size: 2em;
+}
+
+
+
